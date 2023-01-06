@@ -1,5 +1,6 @@
 import './App.css';
 import { Component } from "react";
+import FilmsList from './components/filmsList';
 
 class App extends Component {
   
@@ -29,7 +30,7 @@ class App extends Component {
           <button type="submit">Add</button>
         </form>
         <ul>
-          {this.state.list.map((item,idx) => { return <li key={idx}>{item}</li>;})};
+          <FilmsList />
         </ul>
       </div>
     );
